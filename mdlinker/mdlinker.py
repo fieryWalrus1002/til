@@ -29,10 +29,10 @@ def get_link_categories(file):
     return file.split("/")[:-1]
 
 
-def append_link_to_file(link, file):
-    """appends a link to a file"""
+def append_to_file(newstr, file):
+    """appends a string to a file"""
     with open(file, "a") as f:
-        f.write(link + "\n")
+        f.write(newstr + "\n")
 
 
 def refresh_readme():
@@ -57,5 +57,7 @@ if __name__ == "__main__":
 
     refresh_readme()
 
+    # append_to_file("n\n", "readme.md")
+
     for link in sorted(links):
-        append_link_to_file(link, "readme.md")
+        append_to_file(link, "readme.md")
