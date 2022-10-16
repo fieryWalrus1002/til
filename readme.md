@@ -13,6 +13,7 @@ python3 -m mdlinker
 ```
 
 # Links to tidbits
+* [cisco](cisco/cisco-docs.md)
 * [cpp:boost.asio](cpp/boost.asio/boost.asio.tutorial.md)
 * [cpp](cpp/test1.md)
 * [linux](linux/grep-trick-1.md)
