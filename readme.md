@@ -1,8 +1,16 @@
 # Today I learned
 
-The best way to keep my knowledge tidbits in my brain is to write them down somewhere else!
+The best way to keep my knowledge tidbits in my brain is to write them down somewhere else! I can easily search them and reference them when I need to.
 
-So here I will compile links to little tidbits I learn, where I can easily search them and reference them when I need to.<br>
+## Running the md linker script
+
+To create the links in this document, run 'mdlinker.py'. The script tpulls all of the \*.md files, uses the subfolders as categories, creates the links, sorts and then appends them to this file.
+
+```{py}
+python3 -m mdlinker
+```
+
+# Links to tidbits
 * [cpp:boost.asio](cpp/boost.asio/boost.asio.tutorial.md)
 * [cpp](cpp/test1.md)
 * [linux](linux/grep-trick-1.md)

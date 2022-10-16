@@ -10,9 +10,8 @@ def get_config():
 
 def get_files():
     """returns a list of all markdown files in the dir structure,
-    excluding the readme"""
+    excluding the readme files in the config file"""
     exclude = get_config()["exclude"]
-    print(exclude)
     mdfiles = glob.glob("**/*.md", recursive=True)
     return [file for file in mdfiles if file.split("/")[-1] not in exclude]
     # return [mdfile for mdfile in mdfiles if mdfile not in exclude]
@@ -42,8 +41,7 @@ def refresh_readme():
             f.write(line)
 
 
-if __name__ == "__main__":
-
+def reindex_links():
     links = get_links("readme.md")
 
     for path in get_files():
@@ -53,11 +51,12 @@ if __name__ == "__main__":
 
         if link not in links:
             links.append(link)
-            print(link)
 
     refresh_readme()
 
-    # append_to_file("n\n", "readme.md")
-
     for link in sorted(links):
         append_to_file(link, "readme.md")
+
+
+if __name__ == "__main__":
+    reindex_links()
