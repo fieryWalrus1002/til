@@ -13,8 +13,11 @@ python3 -m mdlinker
 ```
 
 # Links to tidbits
-* [cisco](cisco/cisco-docs.md)
-* [cpp:boost.asio](cpp/boost.asio/boost.asio.tutorial.md)
-* [cpp](cpp/test1.md)
-* [linux](linux/grep-trick-1.md)
-* [python:lists](python/lists/sorting-lists.md)
+* [cpp:boost.asio](cpp/boost.asio/boost.asio.tutorial.md):  boost.asio tutorial
+* [cpp:cmake](cpp/cmake/build_doxygen.md):  Building doxygen documentation
+* [cpp:cmake](cpp/cmake/cmake_build.md):  Building projects with cmake
+* [cpp:cmake](cpp/cmake/cmakelists.md):  Creating cmakelist.txt files
+* [cpp:cmake](cpp/cmake/include_boost_cmake.md):  How to include the boost library in CMakeLists.txt
+* [cpp](cpp/test1.md):  Hello, this is a test of the cpp folder
+* [linux](linux/grep-trick-1.md):  This is a grep trick, for finding cheese
+* [python:lists](python/lists/sorting-lists.md):  sorting lists in python

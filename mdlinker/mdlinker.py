@@ -1,6 +1,7 @@
 import glob
 import json
 
+LINK_SPLIT = ":  "
 
 def get_config():
     """returns the config file"""
@@ -20,8 +21,13 @@ def get_files():
 def get_links(file):
     """returns a list of all links in a file"""
     with open(file) as f:
-        return [line.strip() for line in f.readlines() if line.startswith("* [")]
+        return [line.split(LINK_SPLIT)[0].strip() for line in f.readlines() if line.startswith("* [")]
 
+
+def get_header_from_md(file):
+    """returns the header from a markdown file"""
+    with open(file) as f:
+        return f.readline().strip().replace("#", "").strip()
 
 def get_link_categories(file):
     """returns a list of all subject categories in a file path"""
@@ -55,7 +61,8 @@ def reindex_links():
     refresh_readme()
 
     for link in sorted(links):
-        append_to_file(link, "readme.md")
+        header = get_header_from_md(link.split("(")[1].split(")")[0])
+        append_to_file(link + LINK_SPLIT + header, "readme.md")
 
 
 if __name__ == "__main__":
