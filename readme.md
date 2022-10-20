@@ -18,6 +18,9 @@ python3 -m mdlinker
 * [cpp:cmake](cpp/cmake/cmake_build.md):  Building projects with cmake
 * [cpp:cmake](cpp/cmake/cmakelists.md):  Creating cmakelist.txt files
 * [cpp:cmake](cpp/cmake/include_boost_cmake.md):  How to include the boost library in CMakeLists.txt
+* [cpp:curl](cpp/curl/curl_in_cpp.md):  include curl in c++ projects using cmake
+* [cpp:style-guides](cpp/style-guides/google_cpp_style_guide.md):  Google C++ Style Guide Summary
+* [cpp:style-guides](cpp/style-guides/mozille_style_guide.md):  Mozilla C++ Style Guide
 * [cpp](cpp/test1.md):  Hello, this is a test of the cpp folder
 * [linux](linux/grep-trick-1.md):  This is a grep trick, for finding cheese
 * [python:lists](python/lists/sorting-lists.md):  sorting lists in python
