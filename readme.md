@@ -26,6 +26,7 @@ python3 -m mdlinker
 * [](mdlinker\readme.md):  Markdown Link Generator
 * [](mdlinker\template_readme.md):  Today I learned
 * [](python\lists\sorting-lists.md):  sorting lists in python
+* [](rust\c-with-rust.md):  Rust and C/C++ COMBINED! cbindgen, and Rust Embedded code snippets
 * [](rust\tokio\tokio-rust.md):  Async networking in Rust: Tokio tutorial
 * [cpp:boost.asio](cpp/boost.asio/boost.asio.tutorial.md):  boost.asio tutorial
 * [cpp:cmake](cpp/cmake/build_doxygen.md):  Building doxygen documentation
